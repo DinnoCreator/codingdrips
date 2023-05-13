@@ -9,14 +9,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.stuff:hover{
+.stuff:hover {
   cursor: pointer;
 }
 .index-body {
   background-color: #f8f9fa;
 }
 /* display */
-.hide{
+.hide {
   display: none;
 }
 .block {
@@ -190,10 +190,10 @@ body {
   background-color: #fff;
 }
 
-#nonOut{
+#nonOut {
   border: none;
 }
-#nonOut:hover{
+#nonOut:hover {
   border: none;
 }
 @media (max-width: 780px) {
