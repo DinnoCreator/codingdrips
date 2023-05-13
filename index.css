@@ -193,7 +193,7 @@ body {
   background-color: rgb(127, 127, 192);
   color: white;
 } */
-@media (width <= 780px) {
+@media (max-width: 780px) {
   .header1 {
     font-size: 2.5rem;
   }
@@ -209,7 +209,7 @@ body {
     padding-bottom: 1.5rem;
   }
 }
-@media (width <= 994px) {
+@media (max-width: 994px) {
   .normalFlex {
     flex-direction: column;
   }
