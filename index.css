@@ -1,0 +1,222 @@
+:root {
+  --borderRadius: 15px;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.stuff:hover{
+  cursor: pointer;
+}
+.index-body {
+  background-color: #f8f9fa;
+}
+/* display */
+.hide{
+  display: none;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.normalFlex {
+  display: flex;
+  flex-direction: row;
+}
+.normalFlexChild {
+  flex: 1;
+}
+
+.normalFlexChild-background {
+  background-image: url(https://lh3.googleusercontent.com/JNEkXojKB0w2lmlrR2rteKdexLXbciKiNnJax-vcPWiUGb1u9KOmgNE6yPk_0ujFPnQcWniNfv3OY4pFvfOK7zS9SQY4Up42R8f3lRI=s1500);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: "100%";
+  height: 450px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem; */
+}
+.signupFlex {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  width: 100%;
+  max-width: 800px;
+  /* padding: 15px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.5rem;
+}
+.signupFlexChild {
+  flex: 1;
+}
+.signupFlexChild-background {
+  background-image: url(https://wallpaperaccess.com/full/3854771.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: "100%";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+/* fonts */
+.bold {
+  font-weight: 600;
+}
+.bolder {
+  font-weight: 800;
+}
+.header {
+  font-size: 2.5rem;
+}
+.header1 {
+  font-size: 3.5rem;
+}
+.small-text {
+  font-size: 0.9rem;
+}
+.smaller-text {
+  font-size: 0.6rem;
+}
+/* color */
+.bluey {
+  color: rgb(127, 127, 192);
+}
+.bluey-background {
+  background-color: rgb(127, 127, 192);
+}
+.blue {
+  color: rgb(111, 111, 196);
+}
+.gray {
+  color: #999999;
+}
+.white {
+  color: #fff;
+}
+/* spacing */
+.padding-right {
+  padding-right: 2rem;
+}
+.limit {
+  width: 100%;
+  max-width: 320px;
+  /* padding: 15px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+/* shape */
+.border-curve {
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+  border-bottom-left-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+}
+
+/* shadow */
+.boxShadow {
+  box-shadow: 0 0 10px #000;
+}
+.bottomShadow {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.transparent .form-control {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+.transparent .form-control:focus {
+  background: transparent;
+  color: #fff;
+}
+.transparent .form-control:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.transparent .form-control::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+/* button */
+.btnct {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 5px 15px;
+  color: white;
+}
+
+.btnct:hover {
+  /* border-color: black; */
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btnct-white:hover {
+  border: 1px solid;
+  border-color: white;
+  color: white;
+}
+.btnct-bluey {
+  border: 1px solid rgb(127, 127, 192);
+  background-color: rgb(127, 127, 192);
+  color: white;
+}
+.btnct-bluey:hover {
+  border: 1px solid rgb(127, 127, 192);
+  color: rgb(127, 127, 192);
+}
+.btnct-blueyR {
+  margin-left: 1rem;
+  border: 1px solid rgb(127, 127, 192);
+  color: rgb(127, 127, 192);
+  background-color: #fff;
+}
+/* .btnct-blueyR:hover {
+  background-color: rgb(127, 127, 192);
+  color: white;
+} */
+@media (width <= 780px) {
+  .header1 {
+    font-size: 2.5rem;
+  }
+  .signupFlex {
+    flex-direction: column;
+    max-width: 350px;
+    height: fit-content;
+  }
+
+  .signupFlexChild-background {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (width <= 994px) {
+  .normalFlex {
+    flex-direction: column;
+  }
+  .normalFlexChild {
+    margin-top: 1rem;
+  }
+  .indexHeight {
+    height: 700px;
+  }
+}
