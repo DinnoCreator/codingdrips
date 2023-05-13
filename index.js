@@ -22,10 +22,12 @@ $(document).ready(() => {
   // logs user out
   $(".stuff").click(async () => {
     await Cookies.remove("first-cookie");
+    sessionStorage.clear();
     return (location.href = "signup.html");
   });
   //   signs user up/login
   $(".myform").submit(async () => {
     await Cookies.set("first-cookie", username.val());
+    sessionStorage.setItem("first-cookie", username.val())
   });
 });
